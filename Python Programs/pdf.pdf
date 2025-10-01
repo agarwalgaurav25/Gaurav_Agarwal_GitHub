@@ -1,8 +1,0 @@
-a = ["0","1"]
-print (a[0])
-if a[0] == "0":
-	print ("ok")
-
-a = "abcd"
-print (a[-2:-1])
-
