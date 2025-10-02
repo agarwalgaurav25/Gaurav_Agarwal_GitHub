@@ -62,11 +62,12 @@ while should_continue == "Y":
     #Printing the user's Question
     result = calc(num1,num2,operation)
     print(f'{num1} {(operators[operation][1])} {num2} = {result}')
-    
+    print (f'The result is {result}')
     #Asking if user wants to continue
-    if should_continue == input("Press Y if you wanna continue , press N if you dont\n"):
+    should_continue = (input("Press Y if you wanna continue , press N if you dont :")).upper()
+    if should_continue == "Y":
          num1 = result
-
 #End the programm once user is done
-if should_continue == "N":
-    print("Thank yuo for using our calculator")
+    elif should_continue == "N":
+        print("Thank you for using our calculator")
+        break
