@@ -30,18 +30,17 @@ def calc (first_number,second_number,user_operation):
 
     
 
-
+num1 = float(input("Enter the first Number: "))
 
 should_continue = "Y"
 while should_continue == "Y":
-    num1 = int(input("Enter the first Number: "))
-    num2 = int(input("Enter the second Number: "))
+    num2 = float(input("Enter the another Number: "))
     print ("List of Operations Available :")
 
     #Using Loop to print the available operations as per the dictionary operators
     for i in operators:
          print(f'👉 {i} =  {num1} {operators[i][1]} {num2}')
-    operation = input("Enter the operation : ")
+    operation = input("Enter the operation : ").lower()
     #if you wanna see hard coded version open below
     #region
 
@@ -63,9 +62,10 @@ while should_continue == "Y":
     #Printing the user's Question
     result = calc(num1,num2,operation)
     print(f'{num1} {(operators[operation][1])} {num2} = {result}')
-
+    
     #Asking if user wants to continue
-    should_continue = input("Press Y if you wanna continue , press N if you dont\n")
+    if should_continue == input("Press Y if you wanna continue , press N if you dont\n"):
+         num1 = result
 
 #End the programm once user is done
 if should_continue == "N":
