@@ -10,7 +10,8 @@ operators ={
     }
 
 def calc (first_number,second_number,user_operation):
-    print (f'Your Question is {first_number} {operators[user_operation][1]} {second_number}')
+    symbol = operators[user_operation][1]
+    print (f'Your Question is {first_number} {symbol} {second_number}')
     if operation in operators:
             return operators[operation][0](first_number,second_number)
     #if you wanna see hard coded version open below
@@ -44,7 +45,6 @@ while should_continue == "Y":
     #if you wanna see hard coded version open below
     #region
 
-
     # Hard coding the aval operations     
         # operation = input(
         #      f'''
@@ -57,7 +57,7 @@ while should_continue == "Y":
         #      👉 mod = remainder when {num1} is divided by {num2}
 
         # Enter the operation : ''')
- #endregion   
+    #endregion   
 
     #Printing the user's Question
     result = calc(num1,num2,operation)
