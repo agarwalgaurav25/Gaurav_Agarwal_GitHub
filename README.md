@@ -80,7 +80,7 @@ Early exercises focused on logic building and programming structure.
 ## 📊 Excel Projects (Google Drive)
 My Excel-based analytical and financial modeling work is hosted on Google Drive.
 
-👉 **[View Excel Portfolio Here] https://drive.google.com/drive/folders/17Kw3Surdibz-4YDWGbiVKRxSOeQMqxsE?usp=sharing **  
+👉 **[View Excel Portfolio Here](https://drive.google.com/drive/folders/17Kw3Surdibz-4YDWGbiVKRxSOeQMqxsE?usp=sharing) **  
 (*Budget Tracker, Goal-based Investment Planner, and other analytical tools.*)
 
 ---
@@ -95,9 +95,9 @@ My Excel-based analytical and financial modeling work is hosted on Google Drive.
 
 ## 📬 Contact
 - **GitHub:** [agarwalgaurav25](https://github.com/agarwalgaurav25)  
-- **LinkedIn:** [Your LinkedIn Profile Link]  
-- **Email:** [your.email@example.com]  
-- **Google Drive (Excel Projects):** [Add Link Here]
+- **LinkedIn:** [Gaurav Agarwal](https://www.linkedin.com/in/gaurav-agarwal-b575912a7/)
+- **Email:** gagarwal0025@gmail.com 
+- **Google Drive (Excel Projects):** [https://drive.google.com/drive/folders/17Kw3Surdibz-4YDWGbiVKRxSOeQMqxsE?usp=sharing]
 
 ---
 
