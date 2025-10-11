@@ -1,0 +1,75 @@
+print ("Welcome to the Coffee Machine")
+
+Resources= {"ingredients" :{ "milk" : 1000,
+"coffee" : 100,
+"sugar" : 200},
+"money" : 0}
+
+Menu = {"LATTE" : {"ingredients": {"milk" : 100,"coffee" : 10 , "sugar" :       20},"cost" : 2},
+        "ESPRESSO" : {"ingredients": {"milk" : 500,"coffee" : 20 , "sugar" : 10},"cost" : 4},
+        "CAPUCHINO" : {"ingredients": {"milk" : 200,"coffee" : 15 , "sugar" : 40},"cost" : 6}}
+
+def process_coins():
+    total = int(input("ENter the number of Dimes ")) * .10
+    total += int(input("ENter the number of Quarters ")) * .25
+    total  += int(input("ENter the number of nickles ")) * .05
+    total += int(input("ENter the number of pennies ")) * .01
+    return total  
+
+
+def display_resources():
+    global Resources
+    for a in Resources["ingredients"]:
+        print( f"{a} = {Resources["ingredients"][a]}")
+    print ("Money = ",Resources["money"])
+
+def is_resource_sufficient(item_name):
+    for i in Menu[item_name]["ingredients"]:
+        if Menu[item_name]["ingredients"][i] > Resources["ingredients"][i]:
+            print (f"we do not have enough {i}, Choose Something else")
+            return False
+        else:
+            return True    
+
+
+    
+
+
+is_on = True
+
+
+
+
+while is_on == True:
+    user_choice = str(input("""
+What coffee would you like to have latte/capuchino/espresso ?
+Type OFF to shut the machine
+Would you like to generate a report ?\n""")).upper()
+
+    if user_choice == "REPORT":
+        display_resources()
+    elif user_choice == "OFF":
+        display_resources()
+        quit()
+    elif user_choice in Menu:
+        if is_resource_sufficient(user_choice) == True:
+            payment = process_coins()
+            if payment > Menu[user_choice]["cost"]:
+                #make the cofee and deduct the resources
+                for item in Menu[user_choice]["ingredients"]:
+                    Resources["ingredients"][item] -= Menu[user_choice]["ingredients"][item]
+                print(f"Here is your {user_choice}")
+
+                change = payment - (Menu[user_choice]["cost"])
+                print (f'Here is your change {round(change,2)}')
+                Resources["money"] += (Menu[user_choice]["cost"])
+            else:
+                print("insufficient money , money refunded")
+    
+    if is_on == True:        
+        if input("Would you like to continue ? Y or N \n").upper() == "Y":
+            is_on = True
+        else:
+            is_on = False
+        
+  
