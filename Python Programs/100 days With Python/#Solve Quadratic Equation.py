@@ -48,21 +48,59 @@
 
 
 #letter
-def letters(string):
-	letters_count = 0
-	lowercase = 0
-	uppercase = 0
-	for a in string:
-		letters_count += 1
-		if a.isupper():
-			uppercase += 1 
-		if a.islower():	
-			lowercase += 1
-	print (f"""
-	Total letters = {letters_count}
-	Uppercase     = {uppercase}
-	Lowercase     = {lowercase}""")
-Str = "I Love My Country ,India"
-No_space_string = "".join((Str.split(" ")))
-print(No_space_string)
-letters(No_space_string)
+# def letters(string):
+# 	letters_count = 0
+# 	lowercase = 0
+# 	uppercase = 0
+# 	for a in string:
+# 		letters_count += 1
+# 		if a.isupper():
+# 			uppercase += 1 
+# 		if a.islower():	
+# 			lowercase += 1
+# 	print (f"""
+# 	Total letters = {letters_count}
+# 	Uppercase     = {uppercase}
+# 	Lowercase     = {lowercase}""")
+# Str = "I Love My Country ,India"
+# No_space_string = "".join((Str.split(" ")))
+# print(No_space_string)
+# letters(No_space_string)
+
+nos = [1,2,3,4,5,6,7,8,9,9,9,9,9,9]
+
+
+# mode = 0
+
+# mean = sum(nos)/len(nos)
+
+# def median(numbers):
+# 	nos = len(numbers)
+# 	if len(numbers)% 2 != 0:
+# 		median  = numbers[int(nos/2)]
+# 	else:
+# 		median =(((numbers[int((nos +1) / 2)]) + (numbers[int((nos -1)/ 2)]))) / 2
+# 	print(median)
+	
+
+# def mode(nos):
+# 	unique = set(nos)
+# 	mode = 0
+# 	for a in unique:
+# 			mode_new = nos.count(a)
+# 			if mode_new > mode:
+# 				mode = mode_new
+# 	print (mode)
+	
+	
+# mode(nos)
+# median(nos)
+# print (mean)
+# print(len(nos))
+
+from statistics import mode
+from statistics import median
+from statistics import mean
+print(mode(nos))
+print(median(nos))
+print(mean(nos))
