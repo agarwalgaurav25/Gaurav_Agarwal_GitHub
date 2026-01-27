@@ -23,12 +23,27 @@
 #     print("prime")
 # else:
 #     print("not prime")
-a = "hello"
-b = id(a)
-(a == b )
-#Write a program to solve a Quadratic Equation
-variables = {"a": 0,"b": 0,"c":0 }
-for i in variables:
-    variables[i] = int(input(f"Enter the value of {i}: "))
+# a = "hello"
+# b = id(a)
+# (a == b )
+# #Write a program to solve a Quadratic Equation
+# variables = {"a": 0,"b": 0,"c":0 }
+# for i in variables:
+#     variables[i] = int(input(f"Enter the value of {i}: "))
 
-print (variables)
+# print (variables)
+
+def fizzBuzz(n) :
+    if n % 3 == 0 :
+        print("fizz")
+    elif n % 5 == 0 and n % 3 == 0: 
+        print("buzz")
+    else :
+        print (n)
+    
+n = int(input("enter the integer"))
+a = 0 
+while a < n :
+    fizzBuzz(a)
+    a += 1
+
