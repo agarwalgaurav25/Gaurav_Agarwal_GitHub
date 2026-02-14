@@ -1,5 +1,5 @@
 # Fund Fee Calculator
-### Built by [Your Name] | Python · Financial Modelling · Fund Structures
+### Built by Gaurav Agarwal | Python · Financial Modelling · Fund Structures
 
 ---
 
